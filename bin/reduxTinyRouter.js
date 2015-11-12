@@ -1,14 +1,4 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("redux"));
-	else if(typeof define === 'function' && define.amd)
-		define(["react", "redux"], factory);
-	else {
-		var a = typeof exports === 'object' ? factory(require("react"), require("redux")) : factory(root["React"], root["redux"]);
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE_64__, __WEBPACK_EXTERNAL_MODULE_79__) {
-return /******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -2201,12 +2191,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 64 */
-/*!**************************************************************************************!*\
-  !*** external {"root":"React","commonjs2":"react","commonjs":"react","amd":"react"} ***!
-  \**************************************************************************************/
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
 /***/ function(module, exports) {
 
-	module.exports = __WEBPACK_EXTERNAL_MODULE_64__;
+	module.exports = React;
 
 /***/ },
 /* 65 */
@@ -2744,12 +2734,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 79 */
-/*!**************************************************************************************!*\
-  !*** external {"root":"redux","commonjs2":"redux","commonjs":"redux","amd":"redux"} ***!
-  \**************************************************************************************/
+/*!************************!*\
+  !*** external "redux" ***!
+  \************************/
 /***/ function(module, exports) {
 
-	module.exports = __WEBPACK_EXTERNAL_MODULE_79__;
+	module.exports = redux;
 
 /***/ },
 /* 80 */
@@ -3335,7 +3325,5 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.Router = Router;
 
 /***/ }
-/******/ ])
-});
-;
+/******/ ]);
 //# sourceMappingURL=reduxTinyRouter.js.map
