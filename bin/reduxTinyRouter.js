@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("redux"));
+	else if(typeof define === 'function' && define.amd)
+		define(["react", "redux"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("react"), require("redux")) : factory(root["React"], root["redux"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, function(__WEBPACK_EXTERNAL_MODULE_64__, __WEBPACK_EXTERNAL_MODULE_79__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -2191,12 +2201,12 @@
 
 /***/ },
 /* 64 */
-/*!************************!*\
-  !*** external "React" ***!
-  \************************/
+/*!**************************************************************************************!*\
+  !*** external {"root":"React","commonjs2":"react","commonjs":"react","amd":"react"} ***!
+  \**************************************************************************************/
 /***/ function(module, exports) {
 
-	module.exports = React;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_64__;
 
 /***/ },
 /* 65 */
@@ -2734,12 +2744,12 @@
 
 /***/ },
 /* 79 */
-/*!************************!*\
-  !*** external "redux" ***!
-  \************************/
+/*!**************************************************************************************!*\
+  !*** external {"root":"redux","commonjs2":"redux","commonjs":"redux","amd":"redux"} ***!
+  \**************************************************************************************/
 /***/ function(module, exports) {
 
-	module.exports = redux;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_79__;
 
 /***/ },
 /* 80 */
@@ -3325,5 +3335,7 @@
 	exports.Router = Router;
 
 /***/ }
-/******/ ]);
+/******/ ])
+});
+;
 //# sourceMappingURL=reduxTinyRouter.js.map
