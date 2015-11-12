@@ -2425,7 +2425,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	
 	            function reducerEnhancer(state, action) {
-	                _Object$assign(reducer, _reducerReducerJs.router, reducer);
+	                _Object$assign(reducer, _reducerReducerJs.router);
 	                var res = (0, _redux.combineReducers)(reducer);
 	                return res(state, action);
 	            }

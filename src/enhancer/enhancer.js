@@ -25,7 +25,7 @@ export function applyMiddleware(...middlewares) {
 
 
         function reducerEnhancer (state,action){
-            Object.assign(reducer,tinyReducer,reducer);
+            Object.assign(reducer,tinyReducer);
             var res = combineReducers(reducer);
             return res(state,action);
 
